@@ -90,11 +90,6 @@ if (function_exists('register_sidebar')) {
 		# 
 		----------------------------------------*/
 
-/* Additional Scripts */
-		// wp_register_script('riis-125-scripts', get_stylesheet_directory_uri() . '/js/riis-125.js', array( 'jquery' ));
-		// if( !is_admin() ){ wp_enqueue_script('riis-125-scripts'); }
-
-
 /**
  * Prints HTML with meta information for the current post-date/time.
  * (author output removed)
