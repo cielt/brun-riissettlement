@@ -24,7 +24,11 @@
 		<header id="header" class="row clearfix">
 			<?php if( (brunelleschi_options('header-order') === __('Text on Top','brunelleschi') || brunelleschi_options('header-order') === __('Text on the Left','brunelleschi') || ! brunelleschi_options('header-order')) && !(brunelleschi_options('navigation-position') === __('Nav Above Banner','brunelleschi') && brunelleschi_options('header-order') === __('Text on the Left','brunelleschi')) ) : ?>
 				<hgroup id="branding" class="<?php brunelleschi_branding_class(); ?>">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="site-title">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+							<span class="logo-caption-text"><?php bloginfo( 'name' ); ?></span>
+							<img class="header-logo" src="<?php echo get_bloginfo('stylesheet_directory')?>/images/logo-riis-settlement.png" alt="jacob a. riis neighborhood settlement" />
+						</a></h1>
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 				</hgroup>
 			<?php endif; ?>
@@ -36,7 +40,12 @@
 			<?php endif; ?>
 			<?php if( brunelleschi_options('navigation-position') === __('Nav Above Banner','brunelleschi') && ( brunelleschi_options('header-order') === __('Text on the Left','brunelleschi') || ! brunelleschi_options('header-order') )) : ?>
 				<hgroup id="branding" class="<?php brunelleschi_branding_class(); ?>">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="site-title">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+							<span class="logo-caption-text"><?php bloginfo( 'name' ); ?></span>
+							<img class="header-logo" src="<?php echo get_bloginfo('stylesheet_directory')?>/images/logo-riis-settlement.png" alt="jacob a. riis neighborhood settlement" />
+						</a>
+					</h1>
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 				</hgroup>
 			<?php endif; ?>
@@ -59,7 +68,12 @@
 			<?php endif; ?>
 			<?php if(brunelleschi_options('header-order') === __('Text on the Bottom','brunelleschi') || brunelleschi_options('header-order') === __('Text on the Right','brunelleschi')) : ?>
 				<hgroup id="branding" class="<?php brunelleschi_branding_class(); ?>">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="site-title">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+							<span class="logo-caption-text"><?php bloginfo( 'name' ); ?></span>
+							<img class="header-logo" src="<?php echo get_bloginfo('stylesheet_directory')?>/images/logo-riis-settlement.png" alt="jacob a. riis neighborhood settlement" />
+						</a>
+					</h1>
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 				</hgroup>
 			<?php endif; ?>

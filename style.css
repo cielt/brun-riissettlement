@@ -27,18 +27,27 @@ Version: 0.1
 .site-title {
 	width: 620px;
 	height: 114px;
-	margin: 0 auto 0 0;
+	margin: 0;
 }
 
 .site-title a {
 	display: block;
 	width: 620px;
 	height: 114px;
-	font-size: 0px;
-	color: #fff;
-	text-indent: -200%;
-	background: url(images/logo-riis-settlement.png) no-repeat center center;
 	overflow: hidden;
+}
+
+.site-title a .logo-caption-text {
+	display: block;
+	height: 0;
+	text-indent: -200%;
+	width: 0;
+	font-size: 1px;
+}
+
+.site-title a > .header-logo {
+	width: 100%;
+	height: auto;
 }
 
 .site-description {
@@ -283,7 +292,7 @@ ul.tribe-events-sub-nav a, .tribe-events-back a,
 #sidebar-two h3, #sidebar-two h4 {
 	background: url(images/left_1.png) no-repeat !important;
 	width: 211px;
-	height: 34px;
+	height: 30px;
 	color: white;
 	font: 1.2em Ariel, Helvetica, sans-serif bold;
 	text-transform: uppercase;
@@ -292,6 +301,7 @@ ul.tribe-events-sub-nav a, .tribe-events-back a,
 	padding-left: 10px;
 	margin-bottom: 6px;
 	font-weight: 500;
+	line-height: 20px;
 	letter-spacing: 1px !important;
 }
 
@@ -418,8 +428,7 @@ top_image {
 	font: 1.0em Ariel, Helvetica, sans-serif bold;
 	color: #00509c;
 	text-transform: uppercase;
-	margin-top: 15px;
-	
+	margin: 15px 0 5px;
 }
 
 .entry-meta {
@@ -438,7 +447,8 @@ top_image {
 	padding-top: 0;
 }
 #main p {
-	margin: 0 0 15px 0;
+	line-height: 1.5;
+	margin-bottom: 15px;
 }
 
 .read-more { 
@@ -449,7 +459,7 @@ top_image {
 	font-size: .9em;
 	text-transform: uppercase;
 	letter-spacing: normal;
-	margin: 8px 0 0 0;
+	margin-top: 8px;
 }
 
 #main .entry-content h3.section-header {
@@ -604,7 +614,7 @@ top_image {
 	padding-right: 10px;
 	padding-left: 3px;
 	width: 205px;
-	height: 328px;
+	height: auto;
 }
 
 #front_photo .textwidget {
@@ -1364,7 +1374,17 @@ TODO: integrate with plugin */
 
 @media only screen and (max-width: 767px) {
 
-	/* global nav */
+#branding {
+	height: auto;
+}
+
+.site-title, .site-title a {
+	width: 96%;
+	height: auto;
+	margin: 0 auto;
+}
+
+*/	/* global nav */
 	.section-nav .section-nav-item {
 		display: block;
 	}
@@ -1374,6 +1394,10 @@ TODO: integrate with plugin */
 		height: 100%;
 		width: auto;
 		max-width: none;
+	}
+
+	#main {
+		margin: 0;
 	}
 
 	#main .type-layer .h-splash {
