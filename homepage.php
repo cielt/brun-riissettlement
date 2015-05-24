@@ -9,8 +9,8 @@ get_header(); ?>
 <div class="twelvecol last clearfix"><?php the_content(); ?></div>
 		<div id="main2" class="ninecol">
 			<div class="margin-b-30 clearfix" id="appeal-cta">
-    <a class="cta-banner-main" href="https://donatenow.networkforgood.org/readforriis2015" target="_blank">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/2015-banner-home-read-a-thon.png">
+    <a class="cta-banner-main" href="http://riissettlementdenmark.causevox.com/" target="_blank">
+        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2015/05/2015-banner-danish-ye.jpg">
     </a>
 </div>
 			<div class="clearfix" id="programrow">
