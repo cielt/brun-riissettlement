@@ -14,8 +14,11 @@ get_header(); ?>
 		<ul class="archives">
 			<?php wp_get_archives('type=yearly'); ?>
 		</ul>
-		<?php get_sidebar('calendar'); ?>
 		</div><!-- #main -->
-
+<?php if( brunelleschi_options('sidebar') === __('both','brunelleschi')
+    || brunelleschi_options('sidebar') === __('two left','brunelleschi')
+    || brunelleschi_options('sidebar') === __('two right','brunelleschi')){
+      get_sidebar('secondary');
+    } ?>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
