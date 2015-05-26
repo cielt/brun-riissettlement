@@ -1227,12 +1227,20 @@ TODO: integrate with plugin */
 }
 
 .cta-button.red-button {
+	border: 2px solid #C33547;
 	background: #C33547;
 	color: #fff;
 }
 
 .cta-button.red-button:hover {
-	background: #8C1927;
+	background-color: #8C1927;
+	border-color: #8C1927;
+}
+
+/* disabled CTA */
+.cta-button.red-button.disabled, .cta-button.red-button.disabled:hover {
+	background: #fff;
+	color: #C33547;
 }
 
 .cta-button .ico-inline {

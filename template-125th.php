@@ -99,7 +99,7 @@ get_header(); ?>
           <div id="attend-event" class="content-box">
             <h2 class="h-section text-block">Attend an Event</h2>
             <div class="image-frame large-frame">
-              <a href="http://bit.ly/RiisGala" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/gala-125-years-invite.png" alt="attend the riis settlement 125th anniversary gala"></a>
+              <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/gala-125-years-invite.png" alt="attend the riis settlement 125th anniversary gala"></div>
             </div>
             <p class="text-block has-logo-marker louder">
               Riis Settlement will be holding a 125th anniversary gala to celebrate this auspicious milestone!
@@ -164,7 +164,7 @@ get_header(); ?>
                   </div>
                   <!-- CTA -->
                   <div class="event-cta">
-                    <a href="http://bit.ly/RiisGala" class="cta-button red-button">Purchase Tickets</a>
+                    <a href="#" class="cta-button red-button disabled">Event Passed</a>
                   </div>
                 </li>
               </ol>  
@@ -197,7 +197,7 @@ get_header(); ?>
                       <p class="cta-description">
                         Riis Settlement will be holding a 125th Anniversary Gala and cocktail party.  Stay tuned for details! 
                       </p>
-                      <a href="http://bit.ly/RiisGala" class="cta-button red-button">Get Tickets</a>
+                      <a href="#" class="cta-button red-button disabled">Event Passed</a>
                     </div>
                   </li>
                   <!-- make a donation -->
