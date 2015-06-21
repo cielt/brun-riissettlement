@@ -19,21 +19,21 @@ Version: 0.1
 }
 
 #branding {
-	height: 114px;
-	padding: 15px 0; 
+	height: 128px;
+	padding: 8px 0; 
 }
 
 /*logo is background image here*/
 .site-title {
-	width: 620px;
-	height: 114px;
+	width: 580px;
+	height: 128px;
 	margin: 0;
 }
 
 .site-title a {
 	display: block;
-	width: 620px;
-	height: 114px;
+	width: 580px;
+	height: 128px;
 	overflow: hidden;
 }
 
