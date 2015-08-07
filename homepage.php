@@ -8,10 +8,17 @@ get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 <div class="twelvecol last clearfix"><?php the_content(); ?></div>
 		<div id="main2" class="ninecol">
-			<div class="margin-b-30 clearfix" id="appeal-cta">
-    <a class="cta-banner-main" href="http://riissettlementdenmark.causevox.com/" target="_blank">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2015/05/2015-banner-danish-ye.jpg">
-    </a>
+				<?php if (get_field('home_banner_image')) { 
+						echo '<div class="margin-b-30 clearfix" id="appeal-cta">';
+							if (get_field('home_banner_link_url')) {
+									$banner_img = get_field('home_banner_image');
+									$banner_url = get_field('home_banner_link_url');
+									echo '<a href="' . $banner_url . '" target="_blank"><img src="' . $banner_img . '" ></a>'; 
+								}	else {
+									echo '<img src="' . get_field('home_banner_image') . '" >';
+								}	
+						echo '</div>';
+				} ?>	
 </div>
 			<div class="clearfix" id="programrow">
 				<div class="fourcol left" id="program"><?php get_sidebar('youth'); ?>
